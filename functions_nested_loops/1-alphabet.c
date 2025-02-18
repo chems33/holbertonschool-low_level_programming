@@ -3,7 +3,7 @@
 /**
  * _putchar - Writes a single character to the standard output
  * @c: The character to print
- *
+ 8*
  * Return: 1 on success, -1 on error
  */
 int _putchar(char c)
@@ -16,24 +16,22 @@ int _putchar(char c)
  *
  * Description: This function prints the alphabet from 'a' to 'z',
  * followed by a new line.
- 8*/
+ */
 void print_alphabet(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    int i;
+    char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
 
-    for (i = 0; i < 26; i++)
+    /* Print the entire alphabet and the newline in one go */
+    for (int i = 0; i < 27; i++) /* 26 letters + 1 newline */
     {
         _putchar(alphabet[i]);
     }
-
-    _putchar('\n');
 }
 
 /**
  * main - Entry point of the program
  *
-2 * Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

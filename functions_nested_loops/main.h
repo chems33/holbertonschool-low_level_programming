@@ -1,5 +1,6 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
-int main(void);
-void print_alphabet(void);
+int _putchar(char c)
+void print_alphabet(void)
+int main(void)
 #endif
